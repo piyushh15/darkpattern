@@ -1,0 +1,31 @@
+  {
+    "manifest_version": 3,
+    "name": "SCRAPING",
+    "version": "2.1.1",
+    "description": "Description of your extension",    
+    "permissions": [
+      "activeTab",
+      "storage",
+      "downloads"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "<all_urls>",
+      "https://sole-one-antelope.ngrok-free.app/"
+  ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"],
+          "run_at": "document_end"
+        }
+
+      ]
+  }
+  
+  

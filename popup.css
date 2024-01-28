@@ -1,0 +1,67 @@
+body{
+  background: #2c3e50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#title{
+    margin: auto;
+    padding:10px;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+h1{
+    color:aliceblue
+}
+#button{
+    margin:auto;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS */
+#scanButton {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#scanButton:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+#scanButton:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  #scanButton {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
